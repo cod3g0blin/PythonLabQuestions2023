@@ -10,7 +10,7 @@ def Fibonacci(nthterm):
     print(n1)
     print(n2)
 
-    while i<nthTerm:
+    while i<nthterm:
         sum=n1+n2
         print(sum)
         n1=n2

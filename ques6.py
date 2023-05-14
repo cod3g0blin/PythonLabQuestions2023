@@ -15,4 +15,4 @@ while num>0:
     sum+=r
     num/=10
 
-print("Sum of the digits: ",sum)
+    print("Sum of the digits: ",sum)
