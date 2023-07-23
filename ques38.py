@@ -13,6 +13,11 @@ def validatePassword(pswd):
         return True
     return False
 
+def validateURL(url):
+    url_pattern = r'^(https?|ftp):\/\/[^\s/$.?#].[^\s]*$'
+    if re.match(url_pattern, url):
+        return True
+
 email = input("Enytr a email: ")
 if validateEmail(email):
     print('Valid email')
@@ -20,6 +25,10 @@ if validateEmail(email):
 pswd = "Shubham@487"
 if validatePassword(pswd):
     print("valid pswd")
+
+url = "https://gmail.com"
+if validateURL(url):
+    print("Valid URL")
 
 '''Define the pattern: Start by defining the pattern you want to match. For example, if you want to match a string that 
 starts with "hello," the pattern would be hello.

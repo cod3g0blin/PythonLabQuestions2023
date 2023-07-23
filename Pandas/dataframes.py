@@ -12,5 +12,6 @@ print(df)
 #locdf = df.loc[[1,3]]
 newdf = pd.DataFrame(data, index=['a','b','c','d','e','f'])
 print(newdf)
-locdf = newdf.loc['d']
+#locdf = newdf.loc['d']
+locdf = newdf.iloc[::2] #1 print=>leave=>repeat
 print(locdf)
