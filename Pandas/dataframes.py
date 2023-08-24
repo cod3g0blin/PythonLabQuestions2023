@@ -8,10 +8,13 @@ data = {
 df = pd.DataFrame(data)
 print(df) 
 
-#locdf = df.loc[1]
-#locdf = df.loc[[1,3]]
+locdf = df.loc[1]
+print(locdf)
+locdf = df.loc[[1,3]]
+print(locdf)
 newdf = pd.DataFrame(data, index=['a','b','c','d','e','f'])
 print(newdf)
-#locdf = newdf.loc['d']
-locdf = newdf.iloc[::2] #1 print=>leave=>repeat
+locdf = newdf.loc['d']
+print(locdf)
+locdf = newdf.iloc[::3] #1 print=>leave=>repeat
 print(locdf)

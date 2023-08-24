@@ -9,6 +9,7 @@ def remove_duplicates_and_print_sorted(sentence):
 
     for word in sorted_words:
         print(word)
+    print(sorted_words[::-1])
 
 sentence = input("Enter a sentence: ")
 remove_duplicates_and_print_sorted(sentence)

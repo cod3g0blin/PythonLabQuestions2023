@@ -1,9 +1,9 @@
 import os
 #os.remove("dummyfile.txt")
-if(os.path.exists("dummyfile.txt")):
-    os.remove("dummyfile.txt")
+if(os.path.exists("File/demofile.txt")):
+    os.remove("File/demofile.txt")
 else:
     print("File doesnot exists")
 
 #to remove folder
-os.rmdir("dummyfolder")
+os.rmdir("File/dummyfolder")

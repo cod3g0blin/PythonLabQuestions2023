@@ -23,6 +23,9 @@ def stack_operations(*args):
 
     def is_empty():
         return len(stack) == 0
+    
+    def display():
+        print(stack)
 
     push(10)
     push(20)
@@ -30,5 +33,6 @@ def stack_operations(*args):
     peek()
     pop()
     peek()
+    display()
 
 stack_operations(1, 2, 3)
